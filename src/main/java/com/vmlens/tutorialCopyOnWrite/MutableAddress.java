@@ -9,18 +9,12 @@ public class MutableAddress {
 		this.city = city;
 		this.phoneNumber = phoneNumber;
 	}
-	public String getStreet() {
-		return street;
-	}
-	public String getCity() {
-		return city;
-	}
-	public void updatePostalAddress(String street ,String city ) {
+	public void update(String street ,String city ) {
 		this.street = street;
 		this.city = city;
 	}
-	@Override
 	public String toString() {
-		return "street=" + street + ",city=" + city + ",phoneNumber=" + phoneNumber;
+		return "street=" + street + ",city=" + city + 
+				",phoneNumber=" + phoneNumber;
 	}
 }
